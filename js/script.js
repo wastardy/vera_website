@@ -35,5 +35,32 @@ function userScroll() {
     });
 }
 
+// Video Modal
+const videoBtn = document.querySelector('.video-btn');
+const videoModal = document.querySelector('#video-modal');
+const video = document.querySelector('#video');
+let videoSourse;
+
+if (videoBtn !== null) {
+    videoBtn.addEventListener('click', () => {
+        videoSourse = videoBtn.getAttribute('data-bs-src');
+    });
+}
+
+if (videoModal !== null) {
+    videoModal.addEventListener('shown.bs.modal', () => {
+        video.setAttribute(
+            'src', 
+            videoSourse + '?autoplay=1;modestbranding=1;showInfo=0'
+        );
+    });
+
+    videoModal.addEventListener('hide.bs.modal', () => {
+        video.setAttribute(
+            'src', 
+            videoSourse);
+    });
+}
+
 // Event Listeners
 document.addEventListener('DOMContentLoaded', userScroll);
