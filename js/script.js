@@ -11,3 +11,29 @@ if (replaceWord !== null) {
         }
     );
 }
+
+function userScroll() {
+    const navbar = document.querySelector('.navbar');
+  
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add(
+                'bg-dark', 
+                'border-bottom', 
+                'border-secondary'
+                // 'navbar-bg'
+            );
+        } 
+        else {
+            navbar.classList.remove(
+                'bg-dark', 
+                'border-bottom', 
+                'border-secondary'
+                // 'navbar-bg'
+            );
+        }
+    });
+}
+
+// Event Listeners
+document.addEventListener('DOMContentLoaded', userScroll);
