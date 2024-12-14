@@ -138,6 +138,11 @@
     margin-top: 20px;
 }
 
+.project-modals .modal-dialog {
+    max-width: 950px;
+    margin-top: 120px;
+}
+
 @media(max-width: 992px) {
     .xl-text {
         font-size: 50px;
