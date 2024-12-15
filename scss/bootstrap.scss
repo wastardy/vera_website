@@ -55,4 +55,6 @@ $input-border-radius-sm: $input-radius;
 $input-border-radius-lg: $input-radius;
 $input-border-color: #666;
 
+$enable-negative-margins: true;
+
 @import '../node_modules/bootstrap/scss/bootstrap';
