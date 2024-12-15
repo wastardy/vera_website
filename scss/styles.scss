@@ -36,14 +36,21 @@
     opacity: 1;
 }
 
+.underscore {
+    height: 0.125rem;
+    border: none;
+    background-color: var(--bs-primary);
+    opacity: 1;
+}
+
 .details .vertical-decoration {
-    top: 0;
+    top: 10%;
     left: 0;
     width: 24px;
 }
 
 .details-2 .vertical-decoration {
-    top: 5%;
+    top: 8%;
     right: 0;
     width: 24px;
 }
